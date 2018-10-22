@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="454.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userparsing.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="219.0" layoutY="409.0" onAction="#handleButtonAction" text="Retrieve User" />
+        <Label fx:id="lastNameLabel" layoutX="90.0" layoutY="31.0" minHeight="16" minWidth="69" prefHeight="17.0" prefWidth="430.0" />
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="69.0" text="First Name: " />
+      <Label fx:id="firstNameLabel" layoutX="91.0" layoutY="14.0" prefHeight="17.0" prefWidth="430.0" />
+      <Label layoutX="14.0" layoutY="31.0" prefHeight="17.0" prefWidth="61.0" text="Last Name:" />
+      <Label layoutX="14.0" layoutY="48.0" text="Age:" />
+      <Label fx:id="ageLabel" layoutX="90.0" layoutY="48.0" prefHeight="17.0" prefWidth="430.0" />
+      <Label layoutX="12.0" layoutY="65.0" text="StreetAddress:" />
+      <Label fx:id="streetAddressLabel" layoutX="91.0" layoutY="65.0" prefHeight="17.0" prefWidth="430.0" />
+      <Label layoutX="12.0" layoutY="82.0" text="CIty: " />
+      <Label fx:id="cityLabel" layoutX="91.0" layoutY="82.0" prefHeight="17.0" prefWidth="430.0" />
+      <Label layoutX="12.0" layoutY="99.0" text="State: " />
+      <Label fx:id="stateLabel" layoutX="90.0" layoutY="99.0" prefHeight="17.0" prefWidth="430.0" />
+    </children>
+</AnchorPane>

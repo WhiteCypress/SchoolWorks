@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200.0" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="weatherforecast.FXMLDocumentController">
+    <children>
+      <BorderPane layoutY="1.0" prefHeight="200.0" prefWidth="320.0">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem fx:id="CloseItem" mnemonicParsing="false" onAction="#CloseItem" text="Close" />
+                        <MenuItem fx:id="OpenItem" mnemonicParsing="false" text="Open" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <AnchorPane prefHeight="220.0" prefWidth="321.0" BorderPane.alignment="CENTER">
+               <children>
+                    <Button fx:id="button2" layoutX="128.0" layoutY="75.0" onAction="#handleButtonAction" text="Click Me!" />
+                  <ImageView fx:id="weatherIcon" fitHeight="86.0" fitWidth="112.0" layoutX="105.0" pickOnBounds="true" preserveRatio="true" />
+                    <Label fx:id="label" alignment="CENTER" layoutX="1.0" layoutY="144.0" minHeight="16" minWidth="69" prefHeight="17.0" prefWidth="320.0" textFill="#e10c0c" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+    </children>
+</AnchorPane>
